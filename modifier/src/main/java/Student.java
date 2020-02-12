@@ -1,8 +1,9 @@
 public class Student {
-    private String name;
-    int score;
+    private final String name;
+    private int score;
 
-    public Student() {
+    public Student(String name) {
+        this.name = name;
     }
 
     public Student(String name, int score) {
@@ -12,10 +13,6 @@ public class Student {
 
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public int getScore() {

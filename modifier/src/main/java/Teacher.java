@@ -1,10 +1,11 @@
 import java.util.ArrayList;
 
 public class Teacher {
-    private String name;
-    ArrayList<Student> students;
+    private final String name;
+    private ArrayList<Student> students;
 
-    public Teacher() {
+    public Teacher(String name) {
+        this.name = name;
     }
 
     public Teacher(String name, ArrayList<Student> students) {
@@ -14,10 +15,6 @@ public class Teacher {
 
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public ArrayList<Student> getStudents() {
