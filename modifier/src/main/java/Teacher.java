@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 
-//Teacher有姓名和学生两个属性，姓名属性不能更改。
 public class Teacher {
     private String name;
     ArrayList<Student> students;
